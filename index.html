@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
     <!-- 
       TODO
@@ -14,37 +14,41 @@
       This should be the same across all pages.
      -->
     <link rel="icon" href="./assets/images/1312.png" />
-		<title>Burlingate</title>
-    <meta name="description" content="A portfolio template for the Unemployables community.">
+    <title>Burlingate</title>
+    <meta
+      name="description"
+      content="A portfolio template for the Unemployables community."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" href="./css/typography.css">
-    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/typography.css" />
+    <link rel="stylesheet" href="./css/utilities.css" />
 
-		<script defer src="./js/script.js"></script>
+    <script defer src="./js/script.js"></script>
     <script>
-        window.onload = function() {
-            // 모든 쿠키를 가져와서 배열로 변환
-            var cookies = document.cookie.split(";");
+      window.onload = function () {
+        // 모든 쿠키를 가져와서 배열로 변환
+        var cookies = document.cookie.split(";");
 
-            for (var i = 0; i < cookies.length; i++) {
-                var cookie = cookies[i];
-                var eqPos = cookie.indexOf("=");
-                var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
-                // 쿠키 삭제
-                document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
-            }
-        };
+        for (var i = 0; i < cookies.length; i++) {
+          var cookie = cookies[i];
+          var eqPos = cookie.indexOf("=");
+          var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+          // 쿠키 삭제
+          document.cookie =
+            name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
+        }
+      };
     </script>
-	</head>
-	<body>
+  </head>
+  <body>
     <!-- NAVBAR -->
     <div class="navbar">
       <a class="nav-title-link" href="./index.html">
         <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
         <span class="nav-title">Burlingate</span>
-         <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
+        <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
         <a class="button" href="mailto:burlingate1@gmail.com">
           <span class="button-text">Contact Me</span>
         </a>
@@ -53,7 +57,6 @@
 
     <!-- MAIN PAGE CONTENT -->
     <div id="main-content">
-
       <!-- PORTFOLIO HEADER -->
       <div id="portfolio-header">
         <div id="portfolio-header-image-container">
@@ -64,13 +67,17 @@
             - Change the number to point to your Unemployable & replace the OpenSea link with your own
             - If you aren't using an Unemployable as your image, remove the entire "a" element
           -->
-          <img src="./assets/images/1312.png" class="portfolio-header-image">
-          <a class="no-underline" target="_blank" href="https://opensea.io/assets/0xe0be388ab81c47b0f098d2030a1c9ef190691a8a/1311">
+          <img src="./assets/images/1312.png" class="portfolio-header-image" />
+          <a
+            class="no-underline"
+            target="_blank"
+            href="https://opensea.io/assets/0xe0be388ab81c47b0f098d2030a1c9ef190691a8a/1311"
+          >
             <!-- <span class="image-caption">Unemployables #1311</span> -->
           </a>
         </div>
 
-          <!-- 
+        <!-- 
             TODO
 
             - Change the main-title to whatver you want
@@ -78,14 +85,23 @@
             - Edit the button text if you feel like it. It will link to the projects section below.
           -->
         <div id="portfolio-header-text-container">
-            <div class="header-text">
-              <span class="main-title">Global partner for startup founders. <br/>unlock your next move.</span>
-              <div class="body-text">Our consulting firm specializes in assisting businesses with their entry into the US market. We provide expert guidance on navigating market analysis, and strategic partnership development. Our goal is to ensure a smooth and successful expansion for our clients into one of the world's largest economies.</div>
+          <div class="header-text">
+            <span class="main-title"
+              >Global partner for startup founders. <br />unlock your next
+              move.</span
+            >
+            <div class="body-text">
+              Burlingate specializes in assisting businesses with their entry
+              into the US market. We provide expert guidance on navigating
+              market research and analysis, and strategic partnership
+              development. Our mission is to ensure a smooth and successful
+              expansion for startup into one of the world's largest market.
             </div>
-            <a class="button" id="my-work-link">
+          </div>
+          <!-- <a class="button" id="my-work-link">
               <span class="button-text">Check out my projects</span> 
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
+            </a> -->
         </div>
       </div>
 
@@ -99,26 +115,99 @@
       <div id="about-section">
         <span class="subheader-text">Services</span>
         <div class="about-section-content">
-          <div class="body-text"><strong>1. Marketing</strong><br/>
-
-            - Performance Marketing: We implement and track targeted marketing campaigns that are designed to achieve specific performance outcomes, such as conversions, clicks, or sales.<br/>
-            - Local Marketing: Our strategies are tailored to engage with the local market, ensuring that your brand resonates with regional audiences and adheres to local trends and preferences.<br/>
-            - Brand Marketing: We focus on building your brand identity and increasing brand awareness through strategic campaigns that highlight your unique value proposition and foster customer loyalty.</div>
-          <div class="body-text"><strong>2. Research</strong><br/>
-
-            - Proof of Concept (PoC) Validation: We test and validate your business concepts to ensure they are viable and have the potential for success before you invest in full-scale development.<br/>
-            - Market Research (Including Interviews): Our comprehensive market research services include conducting interviews to gather insights, assessing market needs, and identifying opportunities for growth.<br/>
-            - Strategic Report Writing: We compile detailed reports that outline strategic insights and actionable recommendations to guide your business decisions and strategy.</div>
-            <div class="body-text"><strong>3. HR </strong><br/>
-
-            - International Talent Recruitment: Our HR services specialize in sourcing and recruiting top talent from around the globe, helping you to build a diverse and skilled workforce.</div>
+          <div class="body-text">
+            <h2 style="text-align: center;">Marketing</h2>
+            <div class="flex-container">  
+              <div class="flex-item"><p>
+              <img
+                src="./assets/images/service1.png"
+                alt="service1"
+                class="sponsor-logo"
+              />
+              <h4>Performance Marketing</h4>
+              Implement and track targeted marketing campaigns that are
+              designed to achieve specific performance outcomes, such as
+              conversions, clicks, or sales.<br />
+                </p>
+              </div>
+              <div class="flex-item"><p>
+                <img
+                src="./assets/images/service2.png"
+                alt="service2"
+                class="sponsor-logo"
+              />
+              <h4>Local Marketing</h4>
+              Strategies are tailored to engage with the local market,
+              ensuring that your brand resonates with regional audiences and
+              adheres to local trends and preferences.<br /></p></div>
+              <div class="flex-item"><p>
+                <img
+                src="./assets/images/service3.png"
+                alt="service3"
+                class="sponsor-logo"
+              />
+              <h4>Brand Marketing</h4>
+              Focus on building your brand identity and increasing brand
+              awareness through strategic campaigns that highlight your unique
+              value proposition and foster customer loyalty.</p></div>
+            </div>  
+          </div>
+          <div class="body-text">
+            <h2 style="text-align: center;">Research</h2>
+            <div class="flex-container">
+              <div class="flex-item"><p>
+                <img
+                src="./assets/images/service4.png"
+                alt="service4"
+                class="sponsor-logo"
+              />
+              <h4>Market Research</h4>
+            Comprehensive market research services include conducting
+            interviews to gather insights, assessing market needs, and
+            identifying opportunities for growth.<br /></p></div>
+            <div class="flex-item"><p>
+              <img
+                src="./assets/images/service5.png"
+                alt="service5"
+                class="sponsor-logo"
+              />
+              <h4>Proof of Concept (PoC) Validation</h4>
+            Test and validate your business concepts to ensure they are viable
+            and have the potential for success before you invest in full-scale
+            development.<br /></p></div>
+            <div class="flex-item"><p>
+              <img
+                src="./assets/images/service6.png"
+                alt="service6"
+                class="sponsor-logo"
+              />
+              <h4>Strategic Research</h4>
+            Compile detailed reports that outline strategic insights and
+            actionable recommendations to guide your business decisions and
+            strategy.</p></div>
+          </div>  
+        </div>
+          <div class="body-text">
+            <h2 style="text-align: center;">HR</h2>
+            <div class="flex-container">
+              <div class="flex-item"><p>
+                <img
+                src="./assets/images/service7.png"
+                alt="service7"
+                class="sponsor-logo"
+              />
+              <h4>Global Talent Recruitment</h4>
+            HR services specialize in sourcing and recruiting top talent from
+            around the U.S., helping you to build a diverse and skilled
+            workforce.</p></div>
+            </div>
+          </div>
         </div>
       </div>
 
       <!-- PROJECTS / MY WORK SECTION -->
       <!-- 업데이트 전까지 잠시 disply none 으로 설정 해놓음-->
-      <div id="my-work-section" style="display: none;">
-        
+      <div id="my-work-section" style="display: none">
         <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
         <span class="subheader-text">My Work / My Projects</span>
 
@@ -146,36 +235,59 @@
                 - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
           -->
           <div class="project-card">
-            <img src="./assets/images/desktop.jpeg" class="project-image">
+            <img src="./assets/images/desktop.jpeg" class="project-image" />
             <div class="project-card-text-container">
               <div class="subheader-text project-title">Project Name</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+              <div class="body-text project-card-text">
+                Elit pellentesque habitant morbi tristique senectus et netus et.
+                Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum
+                consequat nisl vel pretium
+              </div>
             </div>
             <a class="button" href="./project-pages/project-template.html">
               <span class="button-text">Read More</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              <image
+                src="./assets/icons/arrow-right.svg"
+                class="right-arrow-icon"
+              />
             </a>
           </div>
           <div class="project-card">
-            <img src="./assets/images/code.jpeg" class="project-image">
+            <img src="./assets/images/code.jpeg" class="project-image" />
             <div class="project-card-text-container">
               <div class="subheader-text project-title">Project Name</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+              <div class="body-text project-card-text">
+                Elit pellentesque habitant morbi tristique senectus et netus et.
+                Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum
+                consequat nisl vel pretium
+              </div>
             </div>
             <a class="button" href="./project-pages/project-template.html">
               <span class="button-text">Read More</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              <image
+                src="./assets/icons/arrow-right.svg"
+                class="right-arrow-icon"
+              />
             </a>
           </div>
           <div class="project-card">
-            <img src="./assets/images/sketchbook.jpeg" class="project-image">
+            <img src="./assets/images/sketchbook.jpeg" class="project-image" />
             <div class="project-card-text-container">
-              <div class="subheader-text project-title">Super Long Project Name That Should be Hidden</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+              <div class="subheader-text project-title">
+                Super Long Project Name That Should be Hidden
+              </div>
+              <div class="body-text project-card-text">
+                Elit pellentesque habitant morbi tristique senectus et netus et.
+                Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum
+                consequat nisl vel pretium
+              </div>
             </div>
             <a class="button" href="./project-pages/project-template.html">
               <span class="button-text">Read More</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              <image
+                src="./assets/icons/arrow-right.svg"
+                class="right-arrow-icon"
+              />
             </a>
           </div>
         </div>
@@ -183,15 +295,40 @@
     </div>
 
     <!-- Partners -->
-    <h2 class="sponsorship-title">Trusted partners among U.S. and Korea institutions</h2>
+    <h2 class="sponsorship-title">
+      Trusted partners among U.S. and Korea institutions
+    </h2>
     <div class="sponsor-container">
-        <img src="./assets/images/google_logo.jpeg?v=1" alt="Google" class="sponsor-logo">
-        <img src="./assets/images/hanwha_logo.png?v=1" alt="Hanwha" class="sponsor-logo">
-        <img src="./assets/images/shinhan_logo.png?v=1" alt="Shinhan" class="sponsor-logo">
-        <img src="./assets/images/harvard_logo.png?v=1" alt="Harvard" class="sponsor-logo">
-        <img src="./assets/images/koreauniv_logo.png?v=1" alt="KoreaUniv" class="sponsor-logo">
-        <img src="./assets/images/kaist_logo.png?v=1" alt="Kaist" class="sponsor-logo">
-        
+      <img
+        src="./assets/images/google_logo.jpeg?v=1"
+        alt="Google"
+        class="sponsor-logo"
+      />
+      <img
+        src="./assets/images/hanwha_logo.png?v=1"
+        alt="Hanwha"
+        class="sponsor-logo"
+      />
+      <img
+        src="./assets/images/shinhan_logo.png?v=1"
+        alt="Shinhan"
+        class="sponsor-logo"
+      />
+      <img
+        src="./assets/images/harvard_logo.png?v=1"
+        alt="Harvard"
+        class="sponsor-logo"
+      />
+      <img
+        src="./assets/images/koreauniv_logo.png?v=1"
+        alt="KoreaUniv"
+        class="sponsor-logo"
+      />
+      <img
+        src="./assets/images/kaist_logo.png?v=1"
+        alt="Kaist"
+        class="sponsor-logo"
+      />
     </div>
     <!-- FOOTER -->
     <div id="footer">
@@ -200,16 +337,24 @@
 
         This should be the same across all pages.
       -->
-      <a class="icon-link" target="_blank" href="https://www.instagram.com/_burlingate">
-        <image src="./assets/icons/instagram.svg" class="footer-icon"/>
+      <a
+        class="icon-link"
+        target="_blank"
+        href="https://www.instagram.com/_burlingate"
+      >
+        <image src="./assets/icons/instagram.svg" class="footer-icon" />
       </a>
       <!-- 
         TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
       
         This should be the same across all pages.
       -->
-      <a class="icon-link" target="_blank" href="https://www.instagram.com/_burlingate">
-        <image src="./assets/icons/linkedin.svg" class="footer-icon"/>
+      <a
+        class="icon-link"
+        target="_blank"
+        href="https://www.instagram.com/_burlingate"
+      >
+        <image src="./assets/icons/linkedin.svg" class="footer-icon" />
       </a>
       <!-- 
         TODO - Change the email after "mailto" to your contact email 
@@ -217,13 +362,11 @@
         This should be the same across all pages.
       -->
       <a class="icon-link" href="mailto:burlingate1@gmail.com">
-        <image src="./assets/icons/mail.svg" class="footer-icon"/>
+        <image src="./assets/icons/mail.svg" class="footer-icon" />
       </a>
-      
+
       <h6>Mountain View, CA</h6>
       <h6>Copyright © burlingate 2024.</h6>
-    
     </div>
-
-	</body>
+  </body>
 </html>

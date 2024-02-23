@@ -43,7 +43,7 @@ body {
 .service-logo {
   width: 100%; /* 반응형 크기 조정을 위해 100%로 설정 */
   max-width: 150px; /* 최대 너비를 150px로 설정 */
-  height: 98px; /* 이미지 비율 유지 */
+  height: auto; /* 이미지 비율 유지 */
   margin: auto;
 }
 
@@ -266,7 +266,8 @@ body {
 }
 
 .flex-item {
-  flex: 1; /* 각 아이템이 유연하게 늘어나도록 설정 */
-  padding: 10px; /* 패딩으로 조금의 공간을 추가 */
+  flex: 1 1 0; /* 각 아이템이 유연하게 늘어나도록 설정 */
+  width: 0;
+  padding: 3px; /* 패딩으로 조금의 공간을 추가 */
   text-align: center; /* 텍스트를 중앙으로 정렬 */
 }

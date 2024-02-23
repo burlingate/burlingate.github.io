@@ -40,6 +40,13 @@ body {
   margin: auto;
 }
 
+.service-logo {
+  width: 100%; /* 반응형 크기 조정을 위해 100%로 설정 */
+  max-width: 150px; /* 최대 너비를 150px로 설정 */
+  height: auto; /* 이미지 비율 유지 */
+  margin: auto;
+}
+
 @media screen and (max-width: 768px) {
   .sponsor-logo {
       max-width: 100px; /* 화면이 작을 때 로고 크기 조정 */

@@ -91,8 +91,8 @@
                   var myOptions = {
                     zoom: 14,
                     center: new google.maps.LatLng(
-                      40.805478,
-                      -73.96522499999998
+                      37.39754690458368,
+                      -121.95387689022239
                     ),
                     mapTypeId: google.maps.MapTypeId.ROADMAP,
                   };
@@ -103,13 +103,13 @@
                   marker = new google.maps.Marker({
                     map: map,
                     position: new google.maps.LatLng(
-                      40.805478,
-                      -73.96522499999998
+                      37.39754690458368,
+                      -121.95387689022239
                     ),
                   });
                   infowindow = new google.maps.InfoWindow({
                     content:
-                      "<b>The Breslin</b><br/>2880 Broadway<br/> New York",
+                      "<b>Burlingate Partners</b><br/>Silicon Valley<br/>CA",
                   });
                   google.maps.event.addListener(marker, "click", function () {
                     infowindow.open(map, marker);
